@@ -1,9 +1,10 @@
-function fnGlobePlot( Xin, R_earth )
+ffunction fnGlobePlot( Xin, R_earth, azimuth, elevation,factor)
 % fnGlobePlot plots an orbit around the globe.
 
 %% Author
 % Ashiv Dhondea, RRSG, UCT.
 % Date: 11 October 2015
+% Edited: 15/10/15: Made Az and El parameters to the function. and factor
 
 %% License
 % Copyright (c) 2015 Ashiv Dhondea
@@ -28,8 +29,8 @@ function fnGlobePlot( Xin, R_earth )
 
 %% Plot on globe
 
-figure('Color',[0 0 0]);
-figure(1);
+figure('Color',[0 0 0]); % Background color
+% figure;
 % whitebg(1,'k')
 hold on;
 load('topo.mat','topo','topomap1');
@@ -59,10 +60,10 @@ plot3(Z0,-Xa,Z0,'y')
 plot3(Z0,Z0,Xa,'g')
 
 % Plotting Orbits
-plot3(Xin(1,:),Xin(2,:),Xin(3,:),'r');
+plot3(Xin(1,:),Xin(2,:),Xin(3,:),'y');
 axis square off
-view(3)
-zoom(2)
+%view(3)
+view([azimuth,elevation])  % Set viewing angle: azimuth and elevation               
+zoom(factor)
 
 end
-
