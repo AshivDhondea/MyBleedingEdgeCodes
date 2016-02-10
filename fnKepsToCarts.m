@@ -6,6 +6,10 @@ function [ R,V ] = fnKepsToCarts( a,e, i, omega,BigOmega, nu )
 % Assumption: Orbit is elliptical!
 %                      not equatorial!
 
+%% Dependencies:
+% 1. fnRotate1.m
+% 2. fnRotate3.m
+
 %% Author:
 % Ashiv Dhondea, RRSG, UCT
 % Date: 21/11/15
