@@ -13,7 +13,7 @@ mu_E = 398600.4418;     % Earth’s gravitational parameter [km^3/s^2]
 
 R_E = 6378.1363;  % Earth radius [km]
 
-theta_dot = 7.29211585530066e-5;  % rad/s
+theta_dot = 7.29211585530066e-5;  % [rad/s]
 
 J_2 = 1.082626925638815e-3;  % [] 
 
