@@ -29,7 +29,7 @@ function [T] = fnRotate2( alpha )
 % OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR 
 % THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-T = [ cosd(alpha),        0,           sind(alpha); 
+T = [ cosd(alpha),        0,           -sind(alpha); 
                 0,        1,                     0;
       sind(alpha),        0,           cos(alpha)];
 
